@@ -18,8 +18,8 @@ Regression models (both linear and non-linear) are used for predicting a real va
 
 In this part, you will understand and learn how to implement the following Machine Learning Regression models:
 
-* Simple Linear Regression
-* Multiple Linear Regression
+* [Simple Linear Regression](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Simple_Linear_Regression)
+* [Multiple Linear Regression](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Multiple_Linear_Regression)
 * Polynomial Regression
 * Support Vector for Regression (SVR)
 * Decision Tree Regression
