@@ -14,7 +14,7 @@ Data preprocessing is an important task. It is a data mining technique that tran
 ## Part 2: [Regression](https://www.udemy.com/course/machinelearning/learn/lecture/5765878#overview)
 [Objective: to explain variability in dependent variable by means of one or more of independent or control variables.]()
 
-Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression. Here is the [Lecture note]().
+Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression. Here is the [Lecture note](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/resources/Regression.pdf).
 
 In this part, you will understand and learn how to implement the following Machine Learning Regression models:
 
