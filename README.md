@@ -4,7 +4,7 @@
 
 Instructors: [Kirill Eremenko](https://www.udemy.com/user/kirilleremenko/), [Hadelin de Ponteves](https://www.udemy.com/user/hadelin-de-ponteves/)
 
-Contains Hands-on-projects using Python and Jupyter-notebook based on [Machine Learning A-Z™: Python & R in Data Science](https://www.udemy.com/course/machinelearning/)  on Udemy. The notebooks also have some basic explainations of critical concepts with web sources for details.
+Contains Hands-on exercises using Python and Jupyter-notebook based on [Machine Learning A-Z™: Python & R in Data Science](https://www.udemy.com/course/machinelearning/)  on Udemy. The notebooks also have some basic explanations of critical concepts with web sources for details.
 
 ## Part 1: [Data Preprocessing](https://www.udemy.com/course/machinelearning/learn/lecture/19055936#overview)
 Objective: data Preprocessing with Python. [Goto the folder](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Data_Preprocessing)
