@@ -35,18 +35,20 @@
 
 # ## Importing the libraries
 
-# In[1]:
+# In[20]:
 
 
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
 # %matplotlib notebook
 
 
 # ## Importing the dataset
 
-# In[2]:
+# In[21]:
 
 
 dataset = pd.read_csv('Salary_Data.csv')
@@ -55,13 +57,13 @@ y = dataset.iloc[:, -1].values
 dataset.head()
 
 
-# In[3]:
+# In[22]:
 
 
 print(X)
 
 
-# In[4]:
+# In[23]:
 
 
 print(y)
@@ -69,7 +71,7 @@ print(y)
 
 # ## Splitting the dataset into the Training set and Test set
 
-# In[5]:
+# In[24]:
 
 
 from sklearn.model_selection import train_test_split
@@ -79,7 +81,7 @@ X1_train, X1_test, y1_train, y1_test = X_train, X_test, y_train, y_test
 
 # ## Training the Simple Linear Regression model on the Training set
 
-# In[14]:
+# In[25]:
 
 
 from sklearn.linear_model import LinearRegression
@@ -89,7 +91,7 @@ regressor.fit(X_train, y_train)
 
 # ## Predicting the Test set results
 
-# In[15]:
+# In[26]:
 
 
 y_pred = regressor.predict(X_test)
@@ -97,7 +99,7 @@ y_pred = regressor.predict(X_test)
 
 # ## Visualising the Training set results
 
-# In[16]:
+# In[27]:
 
 
 plt.scatter(X_train, y_train, color = 'red')
@@ -110,7 +112,7 @@ plt.show()
 
 # ## Visualising the Test set results
 
-# In[18]:
+# In[28]:
 
 
 plt.scatter(X_test, y_test, color = 'red')
@@ -123,24 +125,47 @@ plt.show()
 
 # ## To test the Gradient descent method of scikit-learn linear model 
 
-# In[10]:
+# In[29]:
 
 
 from sklearn.linear_model import SGDRegressor
 clf_ = SGDRegressor()
 clf_.fit(X1_train, y1_train)
+
+print(f"number of iterations completed: {clf_.n_iter_}, number of weight updates: {clf_.t_}")
+
+
+# In[30]:
+
+
+
+
+
+# In[31]:
+
+
 plt.grid()
 plt.scatter(X1_train,y1_train, c='r')
 plt.plot(X1_train,clf_.predict(X1_train), c='b')
 
 
-# In[11]:
+# ### View parameters
+# The parameters are associated with the input training data. We have also manually calculated the prediction data and compared with the module given data.
 
+# In[59]:
+
+
+b_norm = clf_.intercept_
+w_norm = clf_.coef_
+print(f"model parameters:                   w: {w_norm}, b:{b_norm}")
+y1_pred_ana = np.dot(X1_test, w_norm) + b_norm
 
 y1_pred = clf_.predict(X1_test)
 
+print(f"prediction using np.dot() and sgdr.predict match: {(y1_pred == y1_pred_ana).all()}")
 
-# In[12]:
+
+# In[33]:
 
 
 plt.scatter(X1_train, y1_train, color = 'red')
@@ -151,7 +176,7 @@ plt.ylabel('Salary')
 plt.show()
 
 
-# In[13]:
+# In[34]:
 
 
 plt.scatter(X1_test, y1_test, color = 'red')
@@ -160,4 +185,16 @@ plt.title('Salary vs Experience (Test set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
