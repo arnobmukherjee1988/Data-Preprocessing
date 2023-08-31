@@ -21,7 +21,7 @@ In this part, you will understand and learn how to implement the following Machi
 * [Simple Linear Regression](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Simple_Linear_Regression)
 * [Multiple Linear Regression](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Multiple_Linear_Regression)
 * [Polynomial Regression](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Polynomial_Regression)
-* [Support Vector for Regression (SVR)] (https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Support_Vector_Regression)
+* [Support Vector for Regression (SVR)](https://github.com/arnobmukherjee1988/Udemy-Machine-Learning-A-Z-Python/tree/main/Regression/Support_Vector_Regression)
 * Decision Tree Regression
 * Random Forest Regression
 
